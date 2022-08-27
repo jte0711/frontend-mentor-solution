@@ -101,9 +101,12 @@ const Hero = () => {
   return (
     <div className="mt-[3.375rem] md:mt-[4rem] lg:mt-[3.813rem] mx-[-2rem] overflow-hidden">
       <div className="hidden lg:flex">
-        <img src="/illustration/meet-hero-left.png" />
+        <img
+          src="/illustration/meet-hero-left.png"
+          alt="profile pictures of people"
+        />
         <div className="px-[5.5rem]">
-          <MeetH1 styleTailwind={"text-center text-meet-black"}>
+          <MeetH1 styleTailwind={"text-center text-meet-black mt-[2.563rem]"}>
             Group Chat for Everyone
           </MeetH1>
           <MeetBody styleTailwind={"text-center mt-[2.125rem]"}>
@@ -117,12 +120,21 @@ const Hero = () => {
             </MeetButton>
           </div>
         </div>
-        <img src="/illustration/meet-hero-right.png" />
+        <img
+          src="/illustration/meet-hero-right.png"
+          alt="profile pictures of people"
+        />
       </div>
       <div className="flex flex-col justify-center items-center lg:hidden">
         <div className="flex flex-row justify-center">
-          <img src="/illustration/meet-hero-left.png" />
-          <img src="/illustration/meet-hero-right.png" />
+          <img
+            src="/illustration/meet-hero-left.png"
+            alt="profile pictures of people"
+          />{" "}
+          <img
+            src="/illustration/meet-hero-right.png"
+            alt="profile pictures of people"
+          />{" "}
         </div>
         <div className="mt-12 md:mt-[4.5rem] w-[20.438rem] md:w-[28.563rem]">
           <MeetH1
@@ -155,18 +167,22 @@ const Pictures = () => {
       <img
         src="/illustration/meet-woman-in-videocall.jpg"
         className="w-[9.438rem] md:w-[10.25rem] lg:w-[15.938rem] rounded-lg mb-6 md:mb-0"
+        alt="women in videocall"
       />
       <img
         src="/illustration/meet-women-videochatting.jpg"
         className="w-[9.438rem] md:w-[10.25rem] lg:w-[15.938rem] rounded-lg mb-6 md:mb-0 md:ml-[0.688rem] xl:ml-[1.875rem]"
+        alt="women videochatting"
       />
       <img
         src="/illustration/meet-men-in-meeting.jpg"
         className="w-[9.438rem] md:w-[10.25rem] lg:w-[15.938rem]  rounded-lg md:ml-[0.688rem] xl:ml-[1.875rem]"
+        alt="men in meeting"
       />
       <img
         src="/illustration/meet-man-texting.jpg"
         className="w-[9.438rem] md:w-[10.25rem] lg:w-[15.938rem]  rounded-lg md:ml-[0.688rem] xl:ml-[1.875rem]"
+        alt="man texting"
       />
     </div>
   );
@@ -236,7 +252,7 @@ const MeetLandingPage = () => {
       </Head>
       <main className="flex flex-col items-center bg-meet-white overflow-hidden">
         <div className="mt-[3rem] lg:mt-[5rem]">
-          <img src="/logo/meet-logo.svg" />
+          <img src="/logo/meet-logo.svg" alt="meet logo" />
         </div>
         <Hero />
         <Number styleTw={"mt-16 lg:mt-[6.875rem] md:mt-20"}>01</Number>
