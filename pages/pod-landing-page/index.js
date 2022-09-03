@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Head from "next/head";
 
 const Button = ({ children, className, onClick }) => {
   return (
@@ -55,7 +56,15 @@ const PodLandingPage = () => {
   };
 
   return (
-    <>
+    <> 
+    <Head>
+        <title>Portfolio | Pod Request Access Landing Page</title>
+        <meta
+          name="description"
+          content="Pod request access landing page, challenge by Fronted Mentor, coded by James"
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div className="hidden lg:flex flex-col pl-[10.313rem] py-[8.125rem] bg-pod-black  min-h-screen">
         <div className="bg-pod-bg-desktop bg-no-repeat bg-auto bg-right-top">
           <img
